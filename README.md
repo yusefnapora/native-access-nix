@@ -24,7 +24,7 @@ This repo contains a [nix flake](https://nixos.wiki/wiki/Flakes) to make Native 
 
 ### Installing with `nix profile install`
 
-This should work, but I haven't tested it yet:
+With a flake-enabled nix, you can install `native-access` to your user profile with:
 
 ```bash
 nix profile install github:yusefnapora/native-access-nix

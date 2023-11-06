@@ -53,6 +53,13 @@ If you manage your NixOS system with flakes, you can take this flake as an input
     # In my config, I pass the `inputs` field into the `specialArgs`
     # field of `nixpkgs.lib.nixosSystem`, which makes it available to
     # the modules that define the system.
+    #
+    # Nix note: if you've not seen the `@inputs` syntax before,
+    # an `@` symbol at the end of an attribute set definition will
+    # bind the entire set to the name after the `@`.
+    # So `inputs.native-access-nix` is the same thing as
+    # `native-access-nix`, but I can pass the whole `inputs`
+    # set around more easily.
 
     # here's a minimal example:
     nixosConfigurations = { 
